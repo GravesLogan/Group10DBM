@@ -5,11 +5,21 @@ Loading Direction-->
 
 <!DOCTYPE html>
 <html>
-<style>
-body {background-color: rgb(24, 30, 31);}
-h1 {color: rgb(182, 255, 186); text-align: center;}
-</style>
+<div class="topnav">
+    <link rel="stylesheet" href="menubar.css" type="text/css">
+    <a href="main.html">Main</a>
+    <a href="ShipReg.html">Ship Registration</a>
+    <a href="PortEntry.html">Port Entry</a>
+    <a href="PortExit.html">Port Exit</a>
+    <a href="CraneOperator.html">Crane Operator</a>
+    <a href="TruckReg.html">Truck Registration</a>
+    <a class="active" href="#home">Truck Driver Registration</a>
+    <a href="ContainerCompanyReg.html">Container Company Registration</a>
+    <a href="PortAdminManagement.html">Port Admin Management</a>
+    <a href="TestReq.html">TEST REQUESTS</a>
+</div>
 <body>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <h1>Truck Driver Registration</h1>
 
     <form onsubmit="readForm()" id="TruckDriverRegForm" method="post">
@@ -17,16 +27,6 @@ h1 {color: rgb(182, 255, 186); text-align: center;}
         <input type="submit">
     </form>
     
-    <a href="main.html">Main Page<br></a>
-    <a href="ShipReg.html">Ship Registration Page<br></a>
-    <a href="PortEntry.html">Port Entry Page<br></a>
-    <a href="PortExit.html">Port Exit Page<br></a>
-    <a href="CraneOperator.html">Crane Operator Page<br></a>
-    <a href="TruckReg.html">Truck Registration Page<br></a>
-    <a href="TruckDriverReg.html">Truck Driver Registration Page<br></a>
-    <a href="ContainerCompanyReg.html">Container Company Registration Page<br></a>
-    <a href="PortAdminManagement.html">Port Admin Management Page<br></a>
-
     <script>
         function readForm() {
             var TruckID = document.getElementById("TruckID").value;
