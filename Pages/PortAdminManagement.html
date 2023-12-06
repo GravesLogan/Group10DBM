@@ -29,5 +29,31 @@
             var ShipID = document.getElementById("ShipID").value;
         }
     </script>
+
+    <h2><br>Berth Overview</h2>
+
+    <h2><br>Container Insights</h2>
+    <form onsubmit="readForm()" id="ContainerInsightsForm" method="post">
+        Container ID: <input type="text" id="ContainerID" name="ContainerID"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function readForm() {
+            var ContainerID = document.getElementById("ContainerID").value;
+        }
+    </script>
+
+    <h2><br>Truck Information</h2>
+    <form onsubmit="readForm()" id="TruckInformationForm" method="post">
+        Truck ID: <input type="text" id="TruckID" name="TruckID"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function readForm() {
+            var TruckID = document.getElementById("TruckID").value;
+        }
+    </script>
 </body>
 </html>
