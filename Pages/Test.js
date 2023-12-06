@@ -9,6 +9,7 @@ http.createServer(function (req, res) {
 
   app.use(express.json());
   app.use(express.urlencoded({extended: true}));
+  app.use(express.static('public'));
 
   var q = url.parse(req.url, true);
   var filename = "." + q.pathname;
