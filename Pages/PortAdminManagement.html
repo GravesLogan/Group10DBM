@@ -17,6 +17,17 @@
 </div>
 <body>
     <h1>Port Admin Management</h1>
+    <h2>Ship Details</h2>
     
+    <form onsubmit="readForm()" id="ShipDetailsForm" method="post">
+        Ship ID: <input type="text" id="ShipID" name="ShipID"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function readForm() {
+            var ShipID = document.getElementById("ShipID").value;
+        }
+    </script>
 </body>
 </html>
