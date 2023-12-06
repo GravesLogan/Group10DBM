@@ -22,5 +22,17 @@ Display error when same ship registers-->
     <link rel="stylesheet" href="/public/styles.css" type="text/css">
     <h1>Ship Registration</h1>
     <p>Register ships into the system.</p>
+
+    <form onsubmit="readForm()" id="ShipRegForm" method="post">
+        Ship ID: <input type="text" id="ShipID" name="ShipID"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function readForm() {
+            var ShipID = document.getElementById("ShipID").value;
+        }
+    </script>
+    
 </body>
 </html>

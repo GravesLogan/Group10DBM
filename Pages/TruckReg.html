@@ -22,5 +22,17 @@ Display error when same truck enters system-->
     <link rel="stylesheet" href="/public/styles.css" type="text/css">
     <h1>Truck Registration</h1>
     <p>Register trucks into the system.</p>
+
+    <form onsubmit="readForm()" id="TruckRegForm" method="post">
+        Truck ID: <input type="text" id="TruckID" name="TruckID"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function readForm() {
+            var TruckID = document.getElementById("TruckID").value;
+        }
+    </script>
+
 </body>
 </html>
