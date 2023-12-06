@@ -17,6 +17,13 @@
 </div>
 <body>
     <h1>Crane Operator Registration</h1>
+    Input either Truck ID or Ship ID.
+    <form id="ContainerCompanyRegForm" method="post">
+        Ship ID: <input type="text" id="ShipID" name="ShipID"><br>
+        Truck ID: <input type="text" id="TruckID" name="TruckID"><br>
+        <input type="submit">
+        <%= locals.output || "" %>
+    </form>
 </body>
 </body>
 </html>

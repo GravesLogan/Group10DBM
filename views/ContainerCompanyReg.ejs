@@ -17,6 +17,13 @@
 </div>
 <body>
     <h1>Container Company Registration</h1>
+    <form id="ContainerCompanyRegForm" method="post">
+        Container Source: <input type="text" id="Source" name="Source"><br>
+        Container Destination: <input type="text" id="Dest" name="Dest"><br>
+        Container Storage Area: <input type="text" id="StorageArea" name="StorageArea"><br>
+        <input type="submit">
+        <%= locals.output || "" %>
+    </form>
 </body>
 </body>
 </html>
